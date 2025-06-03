@@ -10,5 +10,5 @@
 ```bash
   pip install -r requirement.txt
 ```
-    
+Enter your api key in action.py  
 ## Run the gui.py to start

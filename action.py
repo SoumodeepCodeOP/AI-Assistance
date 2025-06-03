@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 
 def open_youtube_video(video_name):
-    api_key = "AIzaSyCLqGwe6XSTMB724jCX_3KjoKHpteEOMek"
+    api_key = ""#your api key
     youtube = build('youtube', 'v3', developerKey=api_key)
 
     request = youtube.search().list(
@@ -26,7 +26,7 @@ def open_youtube_video(video_name):
         print("Video not found")
 
 load_dotenv()
-genai.configure(api_key=os.environ["AIzaSyAqLHM26LkkV58Uc81jRPiZjafMJWLWILI"])
+genai.configure(api_key=os.environ[""])#your api key
 generation_config = {
   "temperature": 1,
   "top_p": 0.95,
