@@ -1,0 +1,4 @@
+import winsound
+freq=200
+dur=500
+winsound.Beep(freq,dur)
